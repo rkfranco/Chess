@@ -13,7 +13,7 @@ public class Program {
 
 		Scanner sc = new Scanner(System.in);
 		ChessMatch chessMatch = new ChessMatch();
-
+//teste
 		while (true) {
 			try {
 				UI.clearScreen();
