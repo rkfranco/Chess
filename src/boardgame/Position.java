@@ -5,8 +5,16 @@ public class Position {
 	private int column;
 
 	public Position(int row, int column) {
-		this.row = row;
-		this.column = column;
+		this.setValues(row, column);
+	}
+
+	public void setValues(int row, int column) {
+		if (row >= 0 && row < 8 && column >= 0 && column < 8) {
+			this.setRow(row);
+			this.setColumn(column);
+		} else {
+			throw new IllegalArgumentException();
+		}
 	}
 
 	public int getRow() {
