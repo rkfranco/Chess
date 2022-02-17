@@ -5,8 +5,7 @@ public class Position {
 	private int column;
 
 	public Position(int row, int column) {
-		this.row = row;
-		this.column = column;
+		this.setValues(row, column);
 	}
 
 	public int getRow() {
@@ -26,8 +25,10 @@ public class Position {
 	}
 
 	public void setValues(int row, int column) {
-		this.row = row;
-		this.column = column;
+		if (row >= 0 && row <= 7 && column >= 0 && column <= 7) {
+			this.row = row;
+			this.column = column;
+		} 
 	}
 
 	@Override
