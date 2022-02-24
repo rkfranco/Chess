@@ -25,12 +25,8 @@ public class Position {
 	}
 
 	public void setValues(int row, int column) {
-		if (row >= 0 && row <= 7) {
-			this.row = row;
-		}
-		if (column >= 0 && column <= 7) {
-			this.column = column;
-		}
+		this.row = row;
+		this.column = column;
 	}
 
 	@Override
